@@ -92,16 +92,22 @@ The CAPLD integrates data from several openly available sources. Each external r
 - Chinese strokes data: Chinese-characters-code-table (BSD 2-Clause License).
     - Source: https://github.com/yefeijiang/Chinese-characters-code-table/blob/main/全部汉字码表.TXT
     - deposited at Zenodo (DOI: https://doi.org/10.5281/zenodo.17461514).
-- Pingshuiyun (平水韵) (PSY_Rhyme, Tone): https://zh.wikisource.org/wiki/平水韵 (public domain).
+- Pingshuiyun (平水韵) (PSY_Rhyme, Tone): https://zh.wikisource.org/wiki/平水韵 (public domain) (accessed: 2025-10-01).
 - Guangyun (广韵) data (GY_Rhyme, GY_Tone, GY_ID): guangyun_new.tsv, Zenodo (DOI: https://doi.org/10.5281/zenodo.10828130).
-- Unihan database (gloss): Unicode Consortium. Unihan_Readings.txt, https://www.unicode.org/Public/UCD/latest/ucd/
+- Unihan database (gloss): Unicode Consortium. Unihan_Readings.txt, https://www.unicode.org/Public/UCD/latest/ucd/ (Unicode Terms of Use) (accessed: 2025-10-11)
 
 ## Usage
 
 1. **Download external datasets**:
-   Please download the Poetry corpus from the link above and place them in the 'source/corpus/raw_corpus/'folder;
-   download the strokes data (全部汉字码表.TXT), gloss data (Unihan_readings.txt), Pingshuiyun data, and Guangyun data(guangyun_new.tsv) from the links above, and place them in the `source/` folder.
-
+Please download the following datasets and place them in the specified folders:
+- Poetry corpus (https://doi.org/10.5281/zenodo.17461105) : place the csv files in `source/corpus/raw_corpus/`
+- Strokes data (全部汉字码表.TXT)(https://doi.org/10.5281/zenodo.17461514):  place the file in `source/`
+- Gloss data (Unihan_Readings.txt) (https://www.unicode.org/Public/UCD/latest/ucd/): 
+  Download the unihan.zip file from the above link, extract it, and place the `Unihan_Readings.txt` file in the `source/` folder.
+- Pingshuiyun data (https://zh.wikisource.org/wiki/平水韵): 
+  Visit the above page, click the "Download" button at the top right, select "Plain Text" under "Other formats", and save the resulting file as `Pingshuiyun.txt` in the `source/` folder.
+- Guangyun data (guangyun_new.tsv):(DOI: https://doi.org/10.5281/zenodo.10828130)：
+  Download the ZIP file from the above DOI link and extract it. Inside the extracted folder, locate the `raw` folder and place the `guangyun_new.tsv` file in your `source/` folder.
 3. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
