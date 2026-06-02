@@ -1,0 +1,8 @@
+gensim==4.3.1
+matplotlib==3.7.1
+numpy==2.3.3
+opencc_python_reimplemented==0.1.7
+pandas==2.0.1
+pypinyin==0.53.0
+scikit_learn==1.2.2
+scipy==1.16.2
