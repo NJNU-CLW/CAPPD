@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Chinese Ancient Poetry Psycholinguistic Database (CAPPD) provides a large-scale lexical resource for Chinese characters across different historical periods. The database includes lexical statistics, contextual diversity measures, phonological annotations, and diachronic distributions of over 10,000 characters.
+The Chinese Ancient Poetry Psycholinguistic Database (CAPPD) provides a large-scale lexical resource for Chinese characters across different historical periods. The database includes lexical statistics, contextual diversity measures, phonological annotations, and diachronic distributions of over 6,000 characters.
 
 The repository consists of one main vocabulary file (CAPPD.csv) and a sub-database folder (Diachronic_sub-database) containing dynasty-specific statistics and embeddings.
 
